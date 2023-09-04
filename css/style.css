@@ -1,0 +1,308 @@
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+:disabled {
+  cursor: not-allowed;
+}
+button {
+  cursor: pointer;
+}
+iframe {
+  border: none;
+}
+abbr[title] {
+  cursor: help;
+}
+label {
+  display: inline-block;
+}
+
+body {
+  background: #8cc461;
+  font-family: rb, sans-serif;
+}
+@font-face {
+  font-family: rb;
+  src: url(../font/roboto.woff2);
+  font-display: swap;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+.outer {
+  padding: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 0 auto;
+}
+.outer .col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.outer .col-3 {
+  flex-basis: 25%;
+  max-width: 25%;
+  flex: 1 0 auto;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 9px;
+  margin: 0 15px;
+  padding: 5px 0;
+}
+.col-3 h4 {
+  color: #656565;
+  letter-spacing: 3px;
+}
+.col-3 h3 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.outer h2 {
+  color: #ffff;
+  font-size: 35px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.svg {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+.choices {
+  height: 400px;
+  margin-top: 50px;
+}
+.choices svg {
+  transform: rotate(-180deg);
+  position: relative;
+  margin: 0 auto;
+}
+#r {
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+#p {
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  right: 0;
+}
+#s {
+  position: absolute;
+  bottom: 0px;
+  left: 32%;
+}
+button.right {
+  color: #fff;
+  border: 2px solid;
+  background: transparent;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font: 22px rb, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+button.rulebtn {
+  color: #fff;
+  border: 2px solid;
+  background: transparent;
+  padding: 5px 30px;
+  border-radius: 10px;
+  font: 22px rb, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 10px;
+  right: 12%;
+}
+
+.overlap {
+  position: relative;
+  margin: 10px 40px;
+}
+.overlap .crossBtn {
+  position: absolute;
+  background: red;
+  border: 5px solid #fff;
+  padding: 10px 12px;
+  border-radius: 50%;
+  right: -20px;
+  top: -40px;
+}
+
+.gameRuleBox {
+  width: 300px;
+  height: 380px;
+  background: #004429;
+  border: 7px solid #ffffff;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 15px;
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+  margin: 10px 20px;
+  display: none;
+  padding: 20px 30px;
+}
+.gameRuleBox h2 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.gameRuleBox ul {
+  padding: 0px;
+  list-style-image: url(../img/sq.png);
+}
+.gameRuleBox ul li {
+  margin: 8px 0;
+}
+.ruledesign {
+  display: block !important;
+  transition: 12s;
+}
+
+.winbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.winbox #userpic {
+  width: 250px;
+  height: 260px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #32a62f;
+  box-shadow: 0px 1px 62px rgba(0, 0, 0, 0.13);
+  border: 20px solid #66b248;
+}
+#cpic {
+  text-align: center;
+  width: 250px;
+  height: 260px;
+}
+#cpic h4 {
+  margin: 20px 0;
+}
+#userpic img {
+  border-radius: 50%;
+  border: 20px solid #289a27;
+}
+#playAgainbtn {
+  text-align: center;
+}
+#playAgainbtn h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#playAgainbtn h3 {
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.playAgain {
+  background: #fff;
+  color: #6b6b6b;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font: 25px rb, sans-serif;
+  border: none;
+}
+
+.troffyContent {
+  text-align: center;
+  padding: 50px 0;
+  color: #fff;
+}
+.troffyContent h1 {
+  letter-spacing: 10px;
+  font: 70px rb, sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.troffyContent h2 {
+  letter-spacing: 5px;
+  word-spacing: 5px;
+  font-weight: bold;
+  font: 30px rb, sans-serif;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  button.rulebtn {
+    right: 20%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button.rulebtn {
+    right: 17% !important;
+  }
+}
+@media screen and (max-width: 460px) {
+  .outer .col-m-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .winbox {
+    display: block;
+    text-align: center;
+  }
+  #cpic {
+    width: 100%;
+  }
+  .winbox #userpic {
+    margin: 20px 0px 20px 40px;
+  }
+  .choices {
+    height: 500px;
+  }
+  .bottom-btn {
+    height: 270px;
+  }
+  button.rulebtn {
+    right: 50% !important;
+  }
+  .troffyContent h1 {
+    font: 50px rb, sans-serif;
+    font-weight: 900;
+    margin-top: 40px;
+  }
+  .troffyContent h2 {
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font: 25px rb, sans-serif;
+  }
+}
